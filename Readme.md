@@ -1,4 +1,4 @@
-# OSM2PGSQL Docker Image README
+# OSM2PGSQL Docker Image
 This Docker image is designed to simplify the process of importing OpenStreetMap data into a PostgreSQL database using the osm2pgsql tool.
 
 ## Quick Start
