@@ -24,3 +24,4 @@ Ensure that both berlin-latest.osm.pbf and filter.lua are located in the data di
 ## Notes
 - Ensure the PostgreSQL server is accessible from the Docker container. The default host host.docker.internal assumes a local PostgreSQL server when using Docker for Desktop.
 - Ensure you have initialized the PostgreSQL database with the PostGIS extension to handle spatial data.
+- Set the network host correctly if you're on linux: `docker run --network="host" -v $(pwd)/data:/data osm2pgsql -H localhost -U postgres -d osmberlin -O flex -S /data/filter.lua /data/berlin-latest.osm.pbf`
