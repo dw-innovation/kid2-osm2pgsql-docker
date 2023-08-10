@@ -8,7 +8,7 @@ RUN apt-get update && \
     libbz2-dev libpq-dev libgeos-dev libgeos++-dev libproj-dev lua5.3 liblua5.3-dev
 
 ENV PBF_PATH=/data/data.osm.pbf
-ENV LUA_SCRIPT_PATH=/scripts/script.lua
+ENV LUA_SCRIPT_PATH=/data/filter.lua
 ENV PGHOST=host.docker.internal
 ENV PGUSER=postgres
 ENV PGPASSWORD=password

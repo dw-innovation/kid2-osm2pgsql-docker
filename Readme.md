@@ -8,7 +8,7 @@ This Docker image is designed to simplify the process of importing OpenStreetMap
 
 ## Environment Variables
 - `PBF_PATH`: The path to the OSM .pbf data file inside the container. Default: /data/data.osm.pbf
-- `LUA_SCRIPT_PATH`: The path to a Lua script for custom processing. Default: /scripts/script.lua
+- `LUA_SCRIPT_PATH`: The path to a Lua script for custom processing. Default: /data/filter.lua
 - `PGHOST`: The host of the PostgreSQL server. Default: host.docker.internal
 - `PGUSER`: PostgreSQL user. Default: postgres
 - `PGPASSWORD`: PostgreSQL password. Default: password
